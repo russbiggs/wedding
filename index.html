@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rachel & Russ 2019</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75138441-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-75138441-3');
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .column {
+            text-align: center;
+        }
+        
+        .map {
+            z-index: 1;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .navigation {
+            background: white;
+            display: block;
+            height: 140px;
+            left: 0;
+            max-width: 100%;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+            box-shadow: 0px -1px 8px #ccc;
+        }
+        
+        h1 {
+            display: inline;
+            text-align: center;
+        }
+        
+        .logo {
+            height: 130px;
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        .mobile-info {
+            text-align: center;
+        }
+        
+        .title {
+            margin-top: 50px;
+        }
+        
+        .content {
+            padding: 50px;
+        }
+        
+        .visiting ul {
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        
+        a {
+            color: rgb(28, 131, 235);
+        }
+        
+        a:hover {
+            color: rgb(33, 125, 216)
+        }
+        
+        #chapelmap {
+            height: 300px;
+        }
+        
+        #elvadomap {
+            height: 300px;
+        }
+        
+        @media (max-width: 40.0rem) {
+            .row .column.column-50 {
+                margin: 0;
+                max-width: 100%;
+            }
+            .row .column.column-60 {
+                margin: 0;
+                max-width: 100%;
+            }
+            .row .column.column-80 {
+                margin: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navigation">
+        <section class="container">
+            <div class="row">
+                <div class="title column column-25">
+                    <h3> May 25th 2019</h3>
+                </div>
+                <div class="column column-50 logo-holder">
+                    <img class="logo" src="./names_min.svg" alt="rachel and russ">
+                </div>
+                <div class="title column column-25">
+                    <h3>Albuquerque, NM </h3>
+                </div>
+            </div>
+        </section>
+
+    </nav>
+    <div class="content container">
+        <br><br><br><br><br>
+
+        <div class="row">
+            <div class="column column-60 column-offset-20">
+                <img src="./ramen.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="row mobile-info">
+            <div class="column">
+                <h3>May 25th 2019</h3>
+            </div>
+            <div class="column">
+
+                <h3>Albuquerque, NM</h3>
+            </div>
+        </div>
+        <hr>
+        <section>
+            <div class="row">
+                <div class="column">
+
+                    <h2>Ceremony</h2>
+                    <p>4pm</p>
+                    <h3>
+                        <a href="https://www.unmalumni.com/alumni-chapel.html">UNM Alumni Chapel</a>
+                    </h3>
+                    <p>Alumni Memorial Chapel, Albuquerque, NM 87106</p>
+                    <div class="map" id="chapelmap"></div>
+
+                </div>
+                <div class="column">
+
+                    <h2>Reception</h2>
+                    <p>5:30-10pm</p>
+                    <h3>
+                        <a href="https://elvadoabq.com/">El Vado Motel</a>
+                    </h3>
+                    <p>2500 Central SW Albuquerque, NM 87104 </p>
+                    <div class="map" id="elvadomap"></div>
+
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="column column-50 column-offset-25">
+                    <h2>Where to Stay</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column column-50 column-offset-25">
+                    More information to come
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row hidden">
+                <div class="column column-50 column-offset-25">
+                    <h2>Registry</h2>
+                    <p></p>
+
+                </div>
+            </div>
+            <div class="row hidden">
+                <div class="column column-33">
+                    <a href="http://nmpovertylaw.org/donate/" title="NM Center on Law and Poverty">
+                        <img src="./nmclp.png" alt="">
+                    </a>
+                </div>
+                <div class="column column-33">
+                    <a href="http://forms.nomoredeaths.org/donate-money/" title="No Mas Muertes">
+                        <img src="./nomas.jpg" alt="">
+                    </a>
+                </div>
+                <div class="column column-33">
+                    <a href="https://gazaskygeeks.com/donate/" title="Gaza Sky Geeks">
+                        <img src="./gsg.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row visiting">
+                <div class="column column-80 column-offset-10">
+                    <h2>Visiting The Burque</h2>
+                    <p></p>
+                    <h4>Restaurants</h4>
+                    <ul>
+                        <li>Duran's Central Pharmacy - Great red chile</li>
+                        <li>Garcia's - an Albuquerque Classic</li>
+                        <li>Frontier - classic Albuquerque diner</li>
+                        <li>Golden Pride - same owners as the frontier, best handheld breakfast burrito you'll ever eat</li>
+                        <li>Vinaigrette - soups and salads</li>
+                    </ul>
+                    <h4>Drinking</h4>
+                    <ul>
+                        <li>Bow and Arrow Brewing - unsuspecting German-style beer hall with great local beer</li>
+                        <li>Bosque Brewing - Great food and beers</li>
+                        <li>Santa Fe Brewing - one of the original NM microbrews with a taproom in a shipping container</li>
+                        <li>Marble Brewing - Popular local brewery with great outdoor seating</li>
+                        <li>La Cumbre Brewing - Famous for their Elevation IPA</li>
+                        <li>Apothocary Lounge - swanky cocktails and great views of downtown and the mountains</li>
+                    </ul>
+                    <h4>Sites/Attractions</h4>
+                    <ul>
+                        <li>Sandia Tramway - the 2nd longest tramway in the world takes you to Sandia peak at 10,678 ft. in less than 15 minutes</li>
+                        <li>Albuquerque Old Town - the Spanish Colonial heart of Albuquerque</li>
+                        <li><a href="https://santafe.meowwolf.com/">Meow Wolf</a> - In Santa Fe, an out of this world immersive art exhibit/complex/story/experience</li>
+                        <li>Historic Nob Hill - Rachel and Russ' neighborhood, shops, food and drinking along Route 66 </li>
+                        <li><a href="https://www.breakingbadrvtours.com/">Breaking Bad tour</a> - ride in Walt and Jesse's RV and see the filming locations to everyone's favorite dark TV drama</li>
+                    </ul>
+                    <h4>Nature</h4>
+                    <ul>
+                        <li>Rio Grande Bosque - Hike among the cottonwoods forest surrounding the Rio Grande</li>
+                        <li>Sandia Mountains - Hikings trails starting from the foothills of Albuquerque to as high as 10,000 feet</li>
+                        <li>Petroglyph National Monument Trails - Hike along the foot of the West Mesa among millenia old petroglyphs</li>
+                    </ul>
+                    <h4>Culture</h4>
+                    <ul>
+                        <li><a href="https://www.indianpueblo.org">Indian Pueblo Cultural Center</a> - Museum and event space, traditional pueblo dances every weekend day </li>
+                        <li><a href="http://nmhistoricsites.org/coronado">Coronado Historic Site</a> - Ancient pueblo ruins just outside of Albuquerque in Bernalillo, go insde a real Kiva!</li>
+                        <li>Albuquerque Museum - History and Art museum dedicated to the story of Albuquerque</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    </div>
+    <script>
+        function sizeElements() {
+
+            var titles = document.querySelectorAll(".title");
+            var mobile = document.querySelector(".mobile-info");
+            var width = document.body.clientWidth;
+            if (width < 640) {
+                for (var i = 0; i < titles.length; i++) {
+                    titles[i].classList.add("hidden");
+                    titles[i].classList.remove("column");
+                    titles[i].classList.remove("column-25");
+                }
+                mobile.classList.remove("hidden");
+            } else {
+                for (var i = 0; i < titles.length; i++) {
+                    titles[i].classList.remove("hidden");
+                    titles[i].classList.add("column");
+                    titles[i].classList.add("column-25");
+                }
+                mobile.classList.add("hidden");
+            }
+        }
+
+        window.addEventListener("load", sizeElements)
+        window.addEventListener("resize", sizeElements)
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script>
+        var chapelMap = L.map('chapelmap', {
+            scrollWheelZoom: false
+        }).setView([35.084873, -106.624489], 13);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicnVzc2JpZ2dzIiwiYSI6ImNpZXQ0andwaDAwNDhzcG0ycmp6YzlyZ3UifQ.NM3xVtCXK72k6Lg9o2DEMg', {
+            maxZoom: 18,
+            attribution: '',
+            id: 'mapbox.light'
+        }).addTo(chapelMap);
+
+        L.marker([35.084873, -106.624489])
+            .addTo(chapelMap)
+            .bindPopup("<b>UNM Alumni Memorial Chapel</b><br> Alumni Memorial Chapel, Albuquerque, NM 87106");
+
+        var elVadoMap = L.map('elvadomap', {
+            scrollWheelZoom: false
+        }).setView([35.094370, -106.677013], 13);
+
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicnVzc2JpZ2dzIiwiYSI6ImNpZXQ0andwaDAwNDhzcG0ycmp6YzlyZ3UifQ.NM3xVtCXK72k6Lg9o2DEMg', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+                '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            id: 'mapbox.light'
+        }).addTo(elVadoMap);
+
+        L.marker([35.094370, -106.677013])
+            .addTo(elVadoMap)
+            .bindPopup("<b>El Vado Motel</b><br>2500 Central SW Albuquerque, NM 87104");
+    </script>
+
+</body>
+
+</html>
