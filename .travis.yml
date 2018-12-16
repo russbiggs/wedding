@@ -1,0 +1,16 @@
+script:
+- mkdir -p build
+- cp {index.html,favicon.ico} build/
+- cp -R img build/img
+deploy:
+  provider: s3
+  region: us-east-1
+  bucket: rachelandruss.com
+  local_dir: build
+  skip_cleanup: true
+  access_key_id: AKIAIPJMXGHJI6W7NGOQ
+  secret_access_key:
+    secure: DbN5D+WNrhLx87zig7MXLZMdSxKDykciVoddXOAGgM8fcvrpNAZGvNghl0wvsCHrE5XUUkv70KdzQUuG1Q2ye1QHIZ/gTE4mxgCaoShw1yG+wdIOGj/PcVRppzqFb6XSczoPf5af2NuPm0p2Aj4Gh7hTMY3mQU6oTBJ53776cFmuni83ulkyp3x5c+D0pzkE20bG71L1niRyE2C1CebQKfXhuQ3VD52ZaX6N2QU6Wq6TiPbwyjCiPIDMXH69E72MnNh9m8nlYEUAUopwHjD+DB1xM5jjGcKKg9sRyBBM7YEk/PrJm0ANFMm2pIOEiEecjXA8ydErbiJGRUJZNbo2oHaSeTWz86UVfM+yQgCBUmXyx6Vw7UdWpVaP0+UX5wXO/KCE6GE2rXuDqIEaf6Rp9wVH3F2xW29wJ3m4pVu4SDqEqAIRjo66G8jxJiwSTz+X5k4Rgh3IXtG1x96bmtGoiv8FBfVUFsoR6pUHpDz9ZSLL0D0YlTbG3B5Zqd1EG7ZfibGP67sTf+iXCH+an6XDjFsWqR6+gmJheU3JDiOh9G7aLPyinwOPlC3L+bFRwGFpzXU/lc33c806yxb/UPDk5U2UtlgiLIqgs4VdQGCXchQiEbiH81Aad9tcyeIvMbKqAW/48HpKSpNIyIL+MgpOpqA7cZHA4EVFaSvfYCBz0gI=
+  acl: public_read
+  on:
+    repo: russbiggs/wedding
